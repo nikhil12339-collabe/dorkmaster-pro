@@ -52,6 +52,18 @@ export const AboutSidebar: React.FC<{ isOpen?: boolean; onClose: () => void }> =
           <div className="space-y-3">
              <h5 className="text-[10px] font-black text-white uppercase tracking-widest">Connect with Me</h5>
              <div className="flex items-center space-x-4">
+                {/* Email Link */}
+                <a 
+                  href="mailto:nikhilguptaji8@gmail.com" 
+                  className="p-3 bg-gray-600/10 rounded-xl border border-white/5 hover:border-red-600/40 hover:bg-red-950/10 transition-all duration-300 group"
+                  title="Contact via Email"
+                >
+                  <svg className="w-6 h-6 text-gray-400 group-hover:text-red-500 group-hover:scale-110 transition-all" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+
                 {/* Instagram Link */}
                 <a 
                   href="mailto:nikhilguptaji8@gmail.com" 
