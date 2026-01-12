@@ -20,7 +20,7 @@ export const SupportButton: React.FC = () => {
         </svg>
       </div>
       <div className="flex flex-col">
-        <span className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-green-500 transition-colors">Contact Support</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-green-500 transition-colors">Support</span>
       </div>
     </a>
   );
