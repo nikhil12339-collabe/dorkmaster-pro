@@ -26,8 +26,12 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const checkKey = async () => {
-      const selected = await window.aistudio.hasSelectedApiKey();
-      setHasApiKey(selected);
+      if (typeof window !== 'undefined' && (window as any).aistudio?.hasSelectedApiKey) {
+        const selected = await (window as any).aistudio.hasSelectedApiKey();
+        setHasApiKey(selected);
+      } else {
+        setHasApiKey(!!process.env.GEMINI_API_KEY);
+      }
     };
     checkKey();
     const interval = setInterval(checkKey, 2000);
