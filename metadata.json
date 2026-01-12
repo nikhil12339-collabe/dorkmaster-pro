@@ -1,0 +1,5 @@
+{
+  "name": "DorkMaster Pro - Ethical Dorking Suite",
+  "description": "A professional-grade, legal, and ethical Google Dorking automation tool designed for bug bounty hunters and penetration testers to discover sensitive information on authorized domains using the Google Custom Search API.",
+  "requestFramePermissions": []
+}
