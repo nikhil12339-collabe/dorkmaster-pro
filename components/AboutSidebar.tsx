@@ -51,49 +51,29 @@ export const AboutSidebar: React.FC<{ isOpen?: boolean; onClose: () => void }> =
         <section className="space-y-6">
           <div className="space-y-3">
              <h5 className="text-[10px] font-black text-white uppercase tracking-widest">Connect with Me</h5>
-             <div className="grid grid-cols-1 gap-3">
+             <div className="flex items-center space-x-4">
                 {/* Instagram Link */}
                 <a 
-                  href="https://www.instagram.com/hyperglitch_editz" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between group p-4 rounded-xl border border-white/5 bg-white/5 hover:border-red-600/40 hover:bg-red-950/10 transition-all duration-300"
+                  href="mailto:nikhilguptaji8@gmail.com" 
+                  className="p-3 bg-red-600/10 rounded-xl border border-white/5 hover:border-red-600/40 hover:bg-red-950/10 transition-all duration-300 group"
+                  title="Instagram (Redirects to Email)"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className="p-2 bg-red-600/10 rounded-lg group-hover:bg-red-600/20 transition-colors">
-                      <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                      </svg>
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-black text-white uppercase tracking-widest">Instagram</span>
-                      <span className="text-[8px] font-bold text-gray-500 uppercase">@hyperglitch_editz</span>
-                    </div>
-                  </div>
-                  <svg className="w-4 h-4 text-gray-700 group-hover:text-red-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg className="w-6 h-6 text-red-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
                 </a>
 
                 {/* LinkedIn Link */}
                 <a 
-                  href="https://www.linkedin.com/in/nikhil-gupta-ji-11975334b" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between group p-4 rounded-xl border border-white/5 bg-white/5 hover:border-red-600/40 hover:bg-red-950/10 transition-all duration-300"
+                  href="mailto:nikhilguptaji8@gmail.com" 
+                  className="p-3 bg-blue-600/10 rounded-xl border border-white/5 hover:border-red-600/40 hover:bg-red-950/10 transition-all duration-300 group"
+                  title="LinkedIn (Redirects to Email)"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className="p-2 bg-blue-600/10 rounded-lg group-hover:bg-blue-600/20 transition-colors">
-                      <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-black text-white uppercase tracking-widest">LinkedIn</span>
-                      <span className="text-[8px] font-bold text-gray-500 uppercase">Nikhil Gupta</span>
-                    </div>
-                  </div>
-                  <svg className="w-4 h-4 text-gray-700 group-hover:text-red-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg className="w-6 h-6 text-blue-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
                 </a>
              </div>
           </div>
