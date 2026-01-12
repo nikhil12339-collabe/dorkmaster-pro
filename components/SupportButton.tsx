@@ -20,8 +20,7 @@ export const SupportButton: React.FC = () => {
         </svg>
       </div>
       <div className="flex flex-col">
-        <span className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-green-500 transition-colors">WhatsApp</span>
-        <span className="text-[7px] font-bold text-gray-600 uppercase tracking-widest -mt-0.5">Contact Support</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-green-500 transition-colors">Contact Support</span>
       </div>
     </a>
   );
